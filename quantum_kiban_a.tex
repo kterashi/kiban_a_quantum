@@ -149,11 +149,11 @@ NISQからFTQCへの過渡期において、量子コンピュータの優位性
 対称性を用いて系の実行的な空間を圧縮する手法はエラー緩和ではすでに考慮されているが、それをエラー訂正に応用することは一定の確実性がありながらも新しい試みである。
 
 %\underline{\bf ハードウェア課題}\vspace{-2mm}
-\begin{wrapfigure}{r}{10.8cm}
+\begin{wrapfigure}{r}{11cm}
 	\begin{center}
-		\vspace{-1.2cm}
+		\vspace{-1.4cm}
 		%\includegraphics[width=10.5cm]{figs/hard}\vspace{-0.4cm}
-		\includegraphics[width=10.8cm]{figs/hard.png}\vspace{-0.4cm}
+		\includegraphics[width=11cm]{figs/hard.png}\vspace{-0.4cm}
 		\caption{\small{(a)ジョセフソン接合ベースの整流素子([\ref{JJ_reciprocle}]から引用)。\maruone 一方向からの光だけを通しやすい性質を持つ。\marutwo 実際のデバイスの写真。\maruthree 3個のジョセフソン接合をもつ超伝導磁束量子ビット(中央の点線で囲まれた領域)と、左右に伸びる二つの共振器から構成される。\marufour 中央点線部分の拡大図。左の白四角に1個、右の白四角に2個のジョセフソン接合が作られている。(b)周波数分割の多重化(上)と時間分割の多重化(下)のイメージ。}
 		\label{fig:hard}}\vspace{-0.7cm}
 	\end{center}
@@ -188,12 +188,12 @@ NISQからFTQCへの過渡期において、量子コンピュータの優位性
 %\begin{comment}
 \begin{wrapfigure}{r}{6.5cm}
 	\begin{center}
-		\vspace{-1.3cm}
+		\vspace{-1.5cm}
 		%\includegraphics[width=10.5cm]{figs/trotter}\vspace{-0.4cm}
 		\includegraphics[width=5.5cm]{figs/trotter.png}\vspace{-0.4cm}
 		\caption{\small{(a)ハミルトニアン時間発展$|\psi(t)\rangle=e^{-iHt}|\psi(0)\rangle$の鈴木-トロッター分解を用いた量子回路。(b)$n$量子ビット系で粒子数$m$を保存する量子回路(上)は2量子ビットゲート(下)で実装可能。%(c)誤差0.1\%でシミュレートするために必要な量子ビット数-制御NOTゲート数の関係を、鈴木-トロッター近似のオーダーと時間ステップを変えて評価する。
 		}
-		\label{fig:z2}}\vspace{-0.7cm}
+		\label{fig:z2}}\vspace{-0.8cm}
 	\end{center}
 \end{wrapfigure}
 %\end{comment}
@@ -262,11 +262,11 @@ NISQからFTQCへの過渡期において、量子コンピュータの優位性
 最初のステップである物理問題の設定については、本研究に先行して、1次元$U(1)$ゲージ理論である\mybf{シュウィンガー模型}のシミュレーションに取り組んできた。シュウィンガー模型はシンプルでありながら、カイラル対称性(粒子のスピンの向きに関する変換対称性)の破れなど、現実世界の非可換ゲージ理論と同じ性質を共有しており、場の理論のシミュレーションではベンチマークとして良く活用される。本研究グループは、\mybf{シュウィンガー模型でのエネルギー基底状態やその時間発展状態を近似する状態を、パラメータ化した量子回路を使って量子コンピュータに実装する}研究を進めてきた。基底状態については変分量子固有値ソルバー、時間発展状態については時間依存変分量子シミュレーションと呼ばれる手法を使ってシミュレーションを行っている。\mybf{1次元$\pmb{\mathbb{Z}_2}$ゲージ理論のハミルトニアン時間発展を鈴木-トロッター分解の方法を使ってシミュレーションを行い、その状態が\ul{電場の有無によって閉じ込め相と非閉じ込め相に別れていくことなどを確認}}した(図~\ref{fig:status}(a))~[\ref{Terashi_QML_Qdata}]。
 物理系が持つ対称性を考慮した量子回路の設計は、本研究の重要なステップである。本研究グループはシュウィンガー模型の時間発展シミュレーションの研究の中で、\mybf{粒子数を保存する量子ゲートを実装した回路を使って\ul{長時間の時間発展シミュレーションを行うことに成功}}している。対称性を持つ量子回路が張るヒルベルト空間は全空間の一部に限定されるため、量子回路のパラメータ決定を効率良く行うことができる。この手法を$\mathbb{Z}_2$ゲージ理論のシミュレーションに応用することは比較的容易である。
 
-\begin{wrapfigure}{r}{11cm}
+\begin{wrapfigure}{r}{11.3cm}
 	\begin{center}
 		\vspace{-0.8cm}
 		%\includegraphics[width=11cm]{figs/result}\vspace{-0.3cm}
-		\includegraphics[width=11cm]{figs/result.png}\vspace{-0.4cm}
+		\includegraphics[width=11.3cm]{figs/result.png}\vspace{-0.4cm}
 		\caption{\small{(a)1次元$\mathbb{Z}_2$ゲージ理論で、物質場が時間発展と共に拡散していく様子(非閉じ込め, 左)。右は拡散しない場合(閉じ込め)。鈴木-トロッター分解を用いた量子回路で時間発展状態をシミュレートし、閉じ込め相と非閉じ込め相の相分類を行った(下)~[\ref{Terashi_QML_Qdata}]。(b)本研究グループによって製作された超伝導量子ビットの写真。中央の$200~{\rm nm}\times200~{\rm nm}$の領域にジョセフソン接合がある。低温科学センターにある希釈冷凍機(右下)と、製作した超伝導量子ビットが$|1\rangle$状態から$|0\rangle$に脱励起するまでの時間($T_1$)の測定結果(左下)。$T_1=7~\mu{\rm s}$を達成している。}
 		\label{fig:status}}\vspace{-1cm}
 	\end{center}
